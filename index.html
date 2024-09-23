@@ -55,20 +55,20 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Tristan Shah</a><sup>*1</sup>,</span>
+                <a href="https://github.com/gladisor" target="_blank">Tristan Shah</a><sup>*1</sup>,</span>
               <span class="author-block">
-                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Noam Smilovich</a><sup>*1</sup>,</span>
+                <a href="https://github.com/NoamSmilovich" target="_blank">Noam Smilovich</a><sup>*1</sup>,</span>
               <span class="author-block">
-                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Samer Gerges</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=T6iUMcYAAAAJ&hl=en&oi=ao" target="_blank">Samer Gerges</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Feruza Amirkulova</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=4KLH2nsAAAAJ&hl=en&oi=ao" target="_blank">Feruza Amirkulova</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Stas Tiomkin</a><sup>2</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=sDfZnUcAAAAJ&hl=en&oi=ao" target="_blank">Stas Tiomkin</a><sup>2</sup></span>
             </div>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">San Jose State University<sup>1</sup>, Texas Tech University<sup>2</sup><br>ICRA 2025</span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal contribution. Listing order is random.</small></span>
             </div>
 
             <div class="column has-text-centered">
@@ -103,19 +103,21 @@
                   <i class="fab fa-github"></i>
                 </span>
                 <span>Code</span>
-              </a>
+                </a>
             </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+            <!-- ArXiv abstract Link -->
+            <!-- <span class="link-block">
+                <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+            </span> -->
+
+
             </div>
           </div>
         </div>
@@ -150,7 +152,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advancements in robotics, control, and machine learning have facilitated progress in the challenging area of object manipulation. These advancements include, among others, the use of deep neural networks to represent dynamics that are partially observed by robot sensors, as well as effective control using sparse control signals. In this work, we explore a more general problem: the manipulation of acoustic waves, which are partially observed by a robot capable of influencing the waves through spatially sparse actuators. This problem holds great potential for the design of new artificial materials, ultrasonic cutting tools, energy harvesting, and other applications. We develop an efficient data-driven method for robot learning that is applicable to either focusing scattered acoustic energy in a designated region or suppressing it, depending on the desired task. The proposed method is significantly better in terms of a solution quality and computational complexity as compared to the state-of-the-art methods for manipulation of dynamical systems governed by partial differential equations. We have made the project code publicly available, along with a web page featuring video demonstrations: https://gladisor.github.io/waves/.          </p>
+            Recent advancements in robotics, control, and machine learning have facilitated progress in the challenging area of object manipulation. These advancements include, among others, the use of deep neural networks to represent dynamics that are partially observed by robot sensors, as well as effective control using sparse control signals. In this work, we explore a more general problem: the manipulation of acoustic waves, which are partially observed by a robot capable of influencing the waves through spatially sparse actuators. This problem holds great potential for the design of new artificial materials, ultrasonic cutting tools, energy harvesting, and other applications. We develop an efficient data-driven method for robot learning that is applicable to either focusing scattered acoustic energy in a designated region or suppressing it, depending on the desired task. The proposed method is better in terms of a solution quality and computational complexity as compared to a state-of-the-art learning based method for manipulation of dynamical systems governed by partial differential equations. Furthermore our proposed method is competitive with a classical semi-analytical method in acoustics research on the demonstrated tasks. We have made the project code publicly available, along with a web page featuring video demonstrations: https://gladisor.github.io/waves/.
+          </p>
         </div>
       </div>
     </div>
@@ -161,40 +164,60 @@
 
 <!-- Image carousel -->
 <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Schematic representation of interaction between an agent and acoustic wave. The agent observes wave through its `Sensor' readings, and affects it back by choosing the optimal locations and radii of the cylindrical scatterers (gray blobs) according to its `Controller' (policy). Wave propagates with the speed of sound according to the Wave PDE, while robot dynamics (actuation of the cylinders) is an order of magnitude slower time scale. `Excitation' represents an exogenous source of acoustic energy (e.g., speaker). The `Dissipation' layer prevents wave reflections from the boundaries and allows for the efficient simulation of open space (infinite) environments. Robot's policy is trained to achieve a desired wave configuration such as focusing energy in a particular location or minimizing total scattered energy.
-        </h2>
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+          
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              Schematic representation of interaction between an agent and acoustic wave. The agent observes wave through its `Sensor' readings, and affects it back by choosing the optimal locations and radii of the cylindrical scatterers (gray blobs) according to its `Controller' (policy). Wave propagates with the speed of sound according to the Wave PDE, while robot dynamics (actuation of the cylinders) is an order of magnitude slower time scale. `Excitation' represents an exogenous source of acoustic energy (e.g., speaker). The `Dissipation' layer prevents wave reflections from the boundaries and allows for the efficient simulation of open space (infinite) environments. Robot's policy is trained to achieve a desired wave configuration such as focusing energy in a particular location or minimizing total scattered energy.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/carousel2.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              A high resolution image of wave scattering produced by our simulator.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              Numerical Integration Scheme: Latent initial condition and exogenous function are obtained from the Wave Encoder. Latent control functions from the Design Encoder are interpolated to form a continuous time control function. Numerical integration results in latent solution.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              PINN Scheme: The latent initial condition and exogenous function are collected from the Wave Encoder. Latent control functions are collected from the Design Encoder. Both sets of inputs from the encoders are passed to compressor network which produces a compressed representation. The PINN conditioned with the compressed representation is evaluated over the latent spatiotemporal domain to produce the latent solution.
+            </h2>
+          </div>
+
+          <div class="item">
+            <!-- Your image here -->
+            <img src="static/images/prediction.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              Long-term prediction of scattered energy over an episode of 0.2 seconds (200 action steps) for the ring configuration (R). The training horizon for the models is 20 actions, which demonstrate generalization of the model to unseen in training horizons.
+            </h2>
+          </div>
+
+          <div class="item" style="flex: 1 1 auto; display: flex; flex-direction: column; align-items: center;">
+            <img src="static/images/error.png" alt="MY ALT TEXT"/>
+            <h2 class="subtitle has-text-centered">
+              Evaluation of our models (cPILS) ability to generalize in time and space compared to NODE. Mean squared error in predicting scattered energy is evaluated at action horizons from 20 to 200. Each action is applied to the robot over 100 simulation steps (1e-3 seconds), therefore the maximum horizon of 200 actions represents a prediction of scattered energy evaluated at 20000 values of t. Each evaluation is conducted on a randomly sampled batch of 32 validation data points from a set of unseen source locations. 
+            </h2>
+          </div>
+
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.png" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          A high resolution image of wave scattering produced by our simulator.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Numerical Integration Scheme: Latent initial condition and exogenous function are obtained from the Wave Encoder. Latent control functions from the Design Encoder are interpolated to form a continuous time control function. Numerical integration results in latent solution.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        PINN Scheme: The latent initial condition and exogenous function are collected from the Wave Encoder. Latent control functions are collected from the Design Encoder. Both sets of inputs from the encoders are passed to compressor network which produces a compressed representation. The PINN conditioned with the compressed representation is evaluated over the latent spatiotemporal domain to produce the latent solution.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
 
@@ -202,28 +225,50 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <!-- <h2 class="title is-3">Another Carousel</h2> -->
       <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-video_mpc" style="flex: 1 1 auto; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%;">
+          <video poster="" id="video_mpc" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/mpc.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Model predictive control.
+          </h2> -->
+        </div>
+
+        <div class="item item-video_dashboard" style="flex: 1 1 auto; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%;">
+          <video poster="" id="video_dashboard" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="static/videos/actions=50_dashboard.mp4" type="video/mp4">
+          </video>
+          <!-- <h2 class="subtitle has-text-centered">
+            Model predictive control.
+          </h2> -->
+        </div>
+        
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel1.mp4" type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
             Total wave energy field.
           </h2>
         </div>
+
+
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
+            <source src="static/videos/carousel2.mp4" type="video/mp4">
           </video>
           <h2 class="subtitle has-text-centered">
             Incident wave energy field.
           </h2>
         </div>
+
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
             <!-- Your video file here -->
@@ -234,6 +279,7 @@
             Scattered wave energy field.
           </h2>
         </div>
+
       </div>
     </div>
   </div>
@@ -256,12 +302,12 @@
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
 
